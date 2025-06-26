@@ -19,6 +19,7 @@ import {
   NavigationMenuList,
 } from "../../components/ui/navigation-menu";
 import { Separator } from "../../components/ui/separator";
+import { Galeria } from "../../components/ui/galeria"; 
 
 
   //Images from Assets
@@ -227,12 +228,8 @@ em Python, Linux, Docker, AWS e muito mais!</p><br />
               </div>
             </div>
           </div>
-          <div className="w-full md:w-[534px] flex-shrink-0 flex justify-center md:justify-end mt-4 md:mt-0 md:self-end md:mt-[72px]">
-            <img
-              className="w-full max-w-[220px] sm:max-w-[350px] md:max-w-[534px] h-auto md:h-[479px] object-cover"
-              alt="PyLadies Floripa Group"
-              src={about}
-            />
+          <div className="w-full md:w-[534px] flex flex-col justify-between items-end min-h-full px-4 py-6">
+            <Galeria />
           </div>
         </div>
         <div className="mt-16 flex justify-center">
