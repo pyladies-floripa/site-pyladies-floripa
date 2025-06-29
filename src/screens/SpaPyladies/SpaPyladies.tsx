@@ -276,7 +276,7 @@ export const SpaPyladies = (): JSX.Element => {
           </div>
         </div>
       </section>
-
+      
       {/* Partners Section */}
       <section id="parceiros" className="w-full max-w-full md:max-w-[1229px] mx-auto mt-8 md:mt-16 px-2 md:px-0">
         <div className="relative">
