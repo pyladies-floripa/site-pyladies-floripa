@@ -85,7 +85,15 @@ export const SpaPyladies = (): JSX.Element => {
     { name: "Membros", href: "#membros" },
     { name: "Parceiros", href: "#parceiros" },
     { name: "Contato", href: "#contato" },
+    { name: "Projetos", href: "#projetos" },
   ];
+
+  const projetos = [
+    { nome: "Bot para WhatsApp" },
+    { nome: "Dashboard de métricas" },
+    { nome: "Site PyLadies Floripa" },
+  ];
+
 
   // Partner placeholders
   const partners = Array(5).fill({ name: "Partner", logo: null });
@@ -307,6 +315,40 @@ export const SpaPyladies = (): JSX.Element => {
           </div>
         </div>
       </section>
+
+      {/* Projetos Ativos */}
+      <section id="projetos" className="w-full max-w-full md:max-w-[1229px] mx-auto mt-8 md:mt-16 px-2 md:px-0">
+        <div className="relative">
+          <Separator className="w-[80px] md:w-[120px] h-[5px] bg-[#dd8b20]" />
+          <h2 className="mt-2 md:mt-6 ml-0 [font-family:'Metrophobic',Helvetica] font-bold text-[#0d1e30] text-xl sm:text-2xl md:text-[32px] tracking-[-0.74px] leading-[32px] md:leading-[48px] text-left">
+            Projetos Ativos
+          </h2>
+          <div className="mt-8 md:mt-16 flex flex-wrap justify-center gap-2 md:gap-[77px]">
+          {["Bot para WhatsApp", "Dashboard de métricas", "Site PyLadies Floripa"].map((nome, index) => (
+          <Card key={index} className="bg-[#d9d9d9] w-40 h-24 md:w-52 md:h-28 flex items-center justify-center">
+          <CardContent className="flex items-center justify-center text-center font-semibold text-sm md:text-base">
+            {nome}
+          </CardContent>
+        </Card>
+            ))}
+          </div>
+          <div className="mt-8 md:mt-16 [font-family:'Inter',Helvetica] font-medium text-black text-sm sm:text-base md:text-2xl tracking-[-0.46px] leading-6 md:leading-8 break-words">
+            Na PyLadies Floripa, temos vários projetos incríveis rolando! 💪<br /> 
+            <br />Estamos construindo esse site juntas, fazendo bots para whatsapp e criando dashboards.
+            <br />Venha participar com a gente!
+          </div>
+          <div className="mt-8 md:mt-16 flex justify-center">
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfy1Ojw_amXBH5G0nLbF3AplMvpDtqy_z2lVG70SAaJcdJs-g/viewform" target="_blank" rel="noopener noreferrer" className="w-full flex justify-center">
+              <Button asChild className="w-full max-w-[400px] h-[44px] md:h-[56px] bg-[#dd8b20] rounded-[50px] shadow-[0px_4px_4px_#00000040] px-2 md:px-8 flex items-center justify-center">
+                <span className="[text-shadow:0px_4px_4px_#00000040] [font-family:'Inter',Helvetica] font-extrabold text-white text-xs sm:text-sm md:text-lg text-center tracking-[-0.46px] uppercase break-words w-full">
+                  Saiba mais
+                </span>
+              </Button>
+            </a>
+          </div>
+        </div>
+      </section>
+
 
       {/* Contact Section */}
       <footer id="contato" className="w-full h-[245px] mt-16 relative bg-[#4a9cb4]">
