@@ -108,24 +108,25 @@ export const SpaPyladies = (): JSX.Element => {
             alt="Pyladies"
             src={logo}
           />
-          <div className="ml-2 md:ml-8 [font-family:'Jaro',Helvetica] font-normal text-white text-xl sm:text-2xl md:text-5xl tracking-[-0.91px] whitespace-nowrap">
+          <div className="ml-4 md:ml-12 [font-family:'Jaro',Helvetica] font-normal text-white text-xl sm:text-2xl md:text-5xl tracking-[-0.91px] whitespace-nowrap">
             PyLadies Floripa
           </div>
           {/* Desktop Menu */}
           <nav className="ml-auto hidden md:block">
-            <ul className="flex gap-2 md:gap-5">
-              {navItems.map((item) => (
-                <li key={item.name}>
-                  <a
-                    href={item.href}
-                    className="[font-family:'Inter',Helvetica] font-medium text-white text-base sm:text-xl md:text-3xl tracking-[-0.61px] hover:underline"
-                  >
-                    {item.name}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </nav>
+          <ul className="flex gap-3 md:gap-5">
+            {navItems.map((item) => (
+              <li key={item.name}>
+                <a
+                  href={item.href}
+                  className="[font-family:'Inter',Helvetica] font-medium text-white text-sm sm:text-base md:text-xl tracking-[-0.61px] hover:underline whitespace-nowrap"
+                >
+                  {item.name}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </nav>
+
           {/* Hamburger for mobile */}
           <button
             className="ml-auto md:hidden p-2 text-white"
