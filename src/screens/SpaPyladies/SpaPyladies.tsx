@@ -10,6 +10,7 @@ import {
 } from "lucide-react";
 import React from "react";
 import { Button } from "../../components/ui/button";
+import { Subtitulo } from "../../components/ui/card";
 import { Card, CardContent } from "../../components/ui/card";
 import {
   NavigationMenu,
@@ -18,6 +19,8 @@ import {
   NavigationMenuList,
 } from "../../components/ui/navigation-menu";
 import { Separator } from "../../components/ui/separator";
+import { Galeria } from "../../components/ui/galeria"; 
+
 
   //Images from Assets
 import project from "../../assets/project.png";
@@ -171,34 +174,62 @@ export const SpaPyladies = (): JSX.Element => {
           <div className="w-full md:w-[638px] flex-shrink-0 flex flex-col justify-center">
             <div className="relative">
               <Separator className="w-[80px] md:w-[120px] h-[5px] bg-[#dd8b20]" />
-              <h2 className="mt-2 md:mt-4 ml-4 md:ml-[61px] [font-family:'Metrophobic',Helvetica] font-bold text-[#0d1e30] text-xl sm:text-2xl md:text-[32px] tracking-[-0.74px] leading-[32px] md:leading-[48px] text-left">
+              <h2 className="mt-2 md:mt-4 ml-4 md:ml-[61px] [font-family:'Metrophobic',Helvetica] font-bold text-[#0d1e30] text-xl sm:text-3xl md:text-[36px] tracking-[-0.74px] leading-[40px] sm:leading-[44px] md:leading-[48px] text-left">
                 Sobre
               </h2>
               <div className="mt-4 md:mt-8 [font-family:'Inter',Helvetica] font-medium text-[#0d1e30] text-sm sm:text-base md:text-2xl tracking-[-0.55px] leading-6 md:leading-9 break-words">
-                A PyLadies Floripa é uma comunidade que incentiva a
-                participação de mulheres (cis, trans e pessoas não binárias)
-                na programação, com foco na linguagem Python.
+                <p>A PyLadies é uma comunidade internacional
+                que atua para aumentar a representatividade
+                feminina na tecnologia, especialmente no
+                universo Python.</p>
                 <br />
+                <p>Nosso objetivo é promover a diversidade, a
+                inclusão e o protagonismo feminino por meio
+                de eventos, oficinas, mentorias e muito mais.</p>
                 <br />
-                Nosso objetivo é criar um ambiente acolhedor, inclusivo e
-                colaborativo, onde todas possam aprender, compartilhar
-                conhecimentos e crescer profissionalmente.
+                <Subtitulo>Somos guiadas por :</Subtitulo><br />
+                <ul className="list-disc pl-4">
+                  <li><strong>Missão:</strong> Empoderar mulheres através da
+tecnologia e do compartilhamento de
+conhecimento.</li>
+                  <li><strong>Visão:</strong> Ser referência em formação,
+acolhimento e transformação social por
+meio da programação.</li>
+                  <li><strong>Valores:</strong> Diversidade, sororidade,
+acolhimento, educação aberta,
+acessibilidade e protagonismo feminino.
+</li></ul><br></br>
+                <Subtitulo>O que rola por aqui?</Subtitulo><br />
+                <p>
+                Na PyLadies Floripa, você encontrará um espaço
+seguro para aprender, crescer e se conectar com
+outras mulheres da tecnologia.</p>
+Nossas atividades incluem: <br></br>
+                <ul className="list-disc pl-4"><li>Meetups presenciais e online</li>
+                <li>Clube do Livro (PyBook)</li>
+                <li>Aulas de conversação em inglês</li>
+                <li>Oficinas, workshops e encontros hands-on</li>
+                <li>Palestras com profissionais incríveis da área</li>
+                <li>Grupos de estudo e mentorias</li>
+                <li>Participação em conferências e eventos tech</li>
+                <li>Confraternizações como o PyLadies Bar</li></ul>
                 <br />
-                Por meio de eventos, workshops, cursos e mentorias, apoiamos
-                iniciantes e fortalecemos a presença feminina na tecnologia.
-                <br />
-                <br />
-                Faça parte da nossa comunidade!
+                <Subtitulo>Impacto real</Subtitulo><br />
+                <p>Em 2024, realizamos mais de 90 atividades,
+impactando diretamente centenas de mulheres com
+aprendizado, acolhimento e conexão.
+Fomos selecionadas para o programa internacional
+#ChamaAsMina 2025 da LINUXtips, que dará início à
+Escola PyLadies Floripa, com capacitações técnicas
+em Python, Linux, Docker, AWS e muito mais!</p><br />
+
+                  Faça parte da nossa comunidade!
                 <br /> Você não está sozinha! 💻💞
               </div>
             </div>
           </div>
-          <div className="w-full md:w-[534px] flex-shrink-0 flex justify-center md:justify-end mt-4 md:mt-0 md:self-end md:mt-[72px]">
-            <img
-              className="w-full max-w-[220px] sm:max-w-[350px] md:max-w-[534px] h-auto md:h-[479px] object-cover"
-              alt="PyLadies Floripa Group"
-              src={about}
-            />
+          <div className="w-full md:w-[534px] flex flex-col justify-between items-end min-h-full px-4 py-6">
+            <Galeria />
           </div>
         </div>
         <div className="mt-16 flex justify-center">

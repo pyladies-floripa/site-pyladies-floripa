@@ -41,6 +41,22 @@ const CardTitle = React.forwardRef<
 ));
 CardTitle.displayName = "CardTitle";
 
+const Subtitulo = React.forwardRef<
+  HTMLHeadingElement,
+  React.HTMLAttributes<HTMLHeadingElement>
+>(({ className, ...props }, ref) => (
+  <h3
+    ref={ref}
+    className={cn(
+      "mt-2 ml-4 md:ml-[61px] [font-family:'Metrophobic',Helvetica] font-semibold text-[#0d1e30] text-lg sm:text-xl md:text-3xl tracking-[-0.5px] leading-[28px] md:leading-[36px] text-left",
+      className
+    )}
+    {...props}
+  />
+));
+
+Subtitulo.displayName = "Subtitulo";
+
 const CardDescription = React.forwardRef<
   HTMLDivElement,
   React.HTMLAttributes<HTMLDivElement>
@@ -80,4 +96,5 @@ export {
   CardTitle,
   CardDescription,
   CardContent,
+  Subtitulo,
 };
