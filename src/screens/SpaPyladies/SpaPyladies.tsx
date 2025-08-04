@@ -171,7 +171,7 @@ export const SpaPyladies = (): JSX.Element => {
         className="w-full max-w-full md:max-w-[1168px] mx-auto mt-8 md:mt-16 mb-8 md:mb-16 px-2 md:px-0"
       >
         <div className="flex flex-col md:flex-row items-center md:items-center gap-4 md:gap-8">
-          <div className="w-full md:w-[638px] flex-shrink-0 flex flex-col justify-center">
+          <div className="w-full md:flex-1 flex-shrink-0 flex flex-col justify-center">
             <div className="relative">
               <Separator className="w-[80px] md:w-[120px] h-[5px] bg-[#dd8b20]" />
               <h2 className="mt-2 md:mt-4 ml-4 md:ml-[61px] [font-family:'Metrophobic',Helvetica] font-bold text-[#0d1e30] text-xl sm:text-3xl md:text-[36px] tracking-[-0.74px] leading-[40px] sm:leading-[44px] md:leading-[48px] text-left">
@@ -228,7 +228,8 @@ em Python, Linux, Docker, AWS e muito mais!</p><br />
               </div>
             </div>
           </div>
-          <div className="w-full md:w-[534px] flex flex-col justify-between items-end min-h-full px-4 py-6">
+          <div className="w-full md:flex-1 flex flex-col justify-between md:items-end items-center min-h-full px-4 py-6">
+            
             <Galeria />
           </div>
         </div>
